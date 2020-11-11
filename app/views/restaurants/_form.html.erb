@@ -2,6 +2,6 @@
   <%= f.error_notification %>
   <%= f.input :name %>
   <%= f.input :address %>
-  <%= f.input :category, as: :select, collection: @categories, prompt: 'Select category' %>
+  <%= f.input :category, as: :select, collection: %w[chinese italian japanese french belgian], prompt: 'Select category' %>
   <%= f.submit %>
 <% end %>
