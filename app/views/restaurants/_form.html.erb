@@ -1,0 +1,7 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :category, as: :select, collection: @categories, prompt: 'Select category' %>
+  <%= f.submit %>
+<% end %>
